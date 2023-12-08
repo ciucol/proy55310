@@ -1,10 +1,10 @@
 const express = require('express')
 const { port } = require('./configs/server.config')
-const router = require('./router')
+const routing = require('./routing')
 
 const app = express()
 
-router(app)
+routing(app)
 
 app.listen(port, () => {
   console.log(`Server running at port ${port}`)
